@@ -14,7 +14,7 @@ javascript: (function() {
     function init() {
         var injection = document.createElement('style');
         document.body.appendChild(injection);
-        injection.innerHTML = '@-webkit-keyframes snow {\nfrom {top:-1%;}\nto{top:121%;}}';
+        injection.innerHTML = '@-webkit-keyframes snow {\nfrom {top:-1%;}\nto{top:121%;}}\n@-moz-keyframes snow {\nfrom {top: -1%;}\nto {top: 121%;}\n}';
     }
     init();
     window.setInterval(createParticle, 200);
